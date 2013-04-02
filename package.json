@@ -1,0 +1,29 @@
+{
+  "name": "BasicServer",
+  "description": "Basic server design based on MVC.",
+  "version": "0.0.1",
+  "author": {
+    "name": "hilarudeens",
+    "email": "hilar.udeen@gmail.com"
+    },
+  "dependencies": {
+    "express": "2.5.11",
+    "mongoose": "2.7.0",
+    "jqtpl": "1.1.0",
+    "session-mongoose": "0.2.2"
+    },
+  "keywords": [
+    "framework",
+    "web",
+    "server",
+    "mvc"
+  ],
+  "main": "index",
+  "engines": {
+    "node": "*"
+  },
+  "_npmVersion": "1.1.13",
+  "_nodeVersion": "v0.6.7",
+  "devDependencies": {},
+  "contributors": []
+}

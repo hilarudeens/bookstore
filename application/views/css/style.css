@@ -1,0 +1,55 @@
+body {
+	margin: auto;
+	font-family: arial, sans-serif;
+	background-color: #FFF;
+}
+
+.header {
+	border-bottom: 1px solid #6965A9;
+	color: #6965A9;
+	display: block;
+	height: 80px;
+	padding-top: 25px; 
+}
+
+.header p {
+	font-size: 40px;
+	font-weight: bold;
+	margin: 0;
+}
+
+.centerbox {
+	height: auto;
+    margin: auto;
+    width: 100%;
+}
+
+.leftbar {
+    float: left;
+    padding-left: 2%;
+    width: 27%;
+    
+}
+
+.contentbox {
+	padding-left: 2%;
+    width: 68%;
+	float: left;
+	border-left: 1px dotted #FFF
+}
+
+table.booklist{
+	width:100%;
+	border:1px solid #6965A9;
+	
+	}
+	
+	table.booklist thead{
+	background:#6965A9;
+	font-weight:bold;
+	color:#FFFFFF;
+	}
+table.booklist td{
+	text-align: center;
+	border:1px solid #6965A9;
+	}	

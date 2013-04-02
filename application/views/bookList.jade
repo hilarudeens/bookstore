@@ -1,0 +1,13 @@
+table.booklist
+	thead
+		th Book Title
+		th Author
+		th ISBN
+		th View
+	tbody
+		each book,i in books
+			tr
+				td #{book.title}
+				td #{book.author}
+				td #{book.isbn}
+				td #{book.file}

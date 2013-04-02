@@ -1,0 +1,28 @@
+html
+	head
+		title #{title} | Sample App
+		link(rel="stylesheet",href="/css/style.css")
+		script(type="text/javascript", src="/js/common.js")
+	body
+	div.header
+		p Sample App
+	div.centerbox
+		div.leftbar
+			p Welcome #{currentUser}
+			p #{title}
+			p
+				a(href="/adminlogin") Admin Login <br/>
+				a(href="/books") Books
+				<br/> 
+				if currentUser !== 'Guest'
+					a(href="/addbooks") Add books	
+		div.contentbox
+			form(name="login", method="post", action="/adminlogin")
+				p
+					span Username:
+					input(type="text", name="username")
+				p
+					span Password:
+					input(type="password", name="password")<br/>
+				p
+				input(type="submit", name="logging_in", value="Login")
