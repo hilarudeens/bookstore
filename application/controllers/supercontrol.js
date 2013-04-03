@@ -6,7 +6,6 @@
  */
 var express = require('express');
 var app = express.createServer();
-var connect = require('connect');
 var SessionMongoose = require("session-mongoose")(express);
 
 var mongooseSessionStore = new SessionMongoose({
