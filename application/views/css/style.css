@@ -9,7 +9,7 @@ body {
 	color: #6965A9;
 	display: block;
 	height: 80px;
-	padding-top: 25px; 
+	padding-top: 25px;
 }
 
 .header p {
@@ -20,36 +20,35 @@ body {
 
 .centerbox {
 	height: auto;
-    margin: auto;
-    width: 100%;
+	margin: auto;
+	width: 100%;
 }
 
 .leftbar {
-    float: left;
-    padding-left: 2%;
-    width: 27%;
-    
+	float: left;
+	padding-left: 2%;
+	width: 27%;
 }
 
 .contentbox {
 	padding-left: 2%;
-    width: 68%;
+	width: 68%;
 	float: left;
 	border-left: 1px dotted #FFF
 }
 
-table.booklist{
-	width:100%;
-	border:1px solid #6965A9;
-	
-	}
-	
-	table.booklist thead{
-	background:#6965A9;
-	font-weight:bold;
-	color:#FFFFFF;
-	}
-table.booklist td{
+table.booklist {
+	width: 100%;
+	border: 1px solid #6965A9;
+}
+
+table.booklist thead {
+	background: #6965A9;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+table.booklist td {
 	text-align: center;
-	border:1px solid #6965A9;
-	}	
+	border: 1px solid #6965A9;
+}

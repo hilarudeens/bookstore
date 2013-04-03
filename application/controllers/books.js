@@ -4,16 +4,22 @@
  * Date Created: 10th Oct 2012,
  * Description: Added for show example.
  */
-var jqtpl = require('jqtpl');
+var booksmodel = require('../models/dbcontrol')('bookmodel').booksModel;
+var jade = require('jade');
 var fs = require("fs");
-var getBooksPage = function(getshowBooksPageArgs) { 
-  jqtpl.template('bookspage', fs.readFileSync(viewsPath + '/books.html',
-      'utf-8'));
-  return jqtpl.tmpl('bookspage', {
-    title : "Books",
-  });
+var path = require('path');
+
+var getBooksPage = function(getshowBooksPageArgs) {
+  var tpl = jade.compile(fs.readFileSync(viewsPath + '/books.jade', 'utf-8'));
+  return tpl({
+      title : 'pdf',
+      PDF: getshowBooksPageArgs.pdfpath
+    });
 };
+
 exports.showBooks = function(request,response,next){
-  var setshowBooksPageArgs = {};
+  var setshowBooksPageArgs = {
+      pdfpath: request.query.pdf
+  };
   response.send(getBooksPage(setshowBooksPageArgs));
 };

@@ -10,4 +10,5 @@ table.booklist
 				td #{book.title}
 				td #{book.author}
 				td #{book.isbn}
-				td #{book.file}
+				td 
+					a(href="/books?pdf=#{book.file}",class="iframe") pdf

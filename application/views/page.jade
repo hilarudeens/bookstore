@@ -2,6 +2,9 @@ html
 	head
 		title #{title} | Sample App
 		link(rel="stylesheet",href="/css/style.css")
+		link(rel="stylesheet",href="/css/colorbox.css")
+		script(type="text/javascript", src="/js/jquery-1.9.1.min.js")
+		script(type="text/javascript", src="/js/jquery.colorbox-min.js")
 		script(type="text/javascript", src="/js/common.js")
 	body
 	div.header
@@ -12,8 +15,6 @@ html
 			p #{title}
 			p
 				a(href="/adminlogin") Admin Login <br/>
-				a(href="/books") Books
-				<br/> 
 				if currentUser !== 'Guest'
 					a(href="/addbooks") Add books				
 		div.contentbox #{booklist}

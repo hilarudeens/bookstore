@@ -1,4 +1,0 @@
-bookstore
-=========
-
-Learning purpose
